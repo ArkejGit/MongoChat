@@ -1,0 +1,23 @@
+{
+  "name": "mongochat",
+  "version": "1.0.0",
+  "description": "Simple chat app using sockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkejGit/MongoChat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArkejGit/MongoChat/issues"
+  },
+  "homepage": "https://github.com/ArkejGit/MongoChat#readme",
+  "dependencies": {
+    "mongodb": "^2.2.31",
+    "socket.io": "^2.0.3"
+  }
+}
