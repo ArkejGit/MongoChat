@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MongoChat</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-sm-12">
+			<h1 class="text-center">
+				MongoChat
+				<button id="clear" class="btn btn-danger"></button>
+			</h1>
+			<div class="status"></div>
+			<div id="chat">
+				<input type="text" id="username" class="form-control" placeholder="Enter name...">
+				<br>
+				<div class="card">
+				  <div id="messages" class="card-block">
+				    This is some text within a card block.
+				  </div>
+				</div>
+				<br>
+				<textarea id="textares" class="form-control" placeholder="Enter message..."></textarea>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="js.js"></script>	
+</body>
+</html>
