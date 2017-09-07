@@ -16,10 +16,13 @@
 	var setStatus = function(s){
 		//Set status
 		status.textContent = s;
+		if (!status.classList.contains('alert','alert-info')) status.classList.add('alert','alert-info');
 
 		if(s != statusDefault) {
 			var delay = setTimeout(function() {
 				setStatus(statusDefault);
+				console.log('test');
+				status.classList.remove('alert','alert-info');
 			}, 4000);
 		}
 	}
@@ -39,7 +42,7 @@
 					//build out message div
 					var message = document.createElement('div');
 					message.setAttribute('class', 'chat-message');
-					message.textContent = data[i].name + ': ' + data[i].message;
+					message.innerHTML = `<b>${data[i].name}:</b> <p>${data[i].message}</p>`;
 					messages.appendChild(message);
 					messages.insertBefore(message, messages.firstChild);
 				}
